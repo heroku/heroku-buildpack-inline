@@ -34,4 +34,4 @@ Phil Hagelberg originated this lovely idea.
     $ git push heroku master
     ...
 
-[buildpack]: http://devcenter.heroku.com/articles/buildpack
+[buildpack]: https://devcenter.heroku.com/articles/buildpack-api#buildpack-api
