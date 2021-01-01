@@ -1,3 +1,7 @@
 #!/bin/sh
 # Usage: bin/release <build-dir>
-exec "$1"/bin/release "$@"
+
+HERE="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+BUILDPACK_DIR="$("${HERE}/../lib/find_buildpack_dir.sh" "$1")"
+
+exec "${BUILDPACK_DIR}/release" "$@"
