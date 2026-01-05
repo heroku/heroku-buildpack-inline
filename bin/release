@@ -4,4 +4,6 @@
 RELEASE_SCRIPT="${1}/${INLINE_BUILDPACK_PATH:-bin}/release"
 
 # The Buildpack API states that the `bin/release` script is optional.
-exec "${RELEASE_SCRIPT}" "$@"
+if [ -f "${RELEASE_SCRIPT}" ]; then
+    exec "${RELEASE_SCRIPT}" "$@"
+fi
