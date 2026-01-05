@@ -1,4 +1,3 @@
 #!/bin/sh
 # Usage: bin/compile <build-dir> <cache-dir> <env-dir>
-INLINE_BUILDPACK_PATH=${INLINE_BUILDPACK_PATH:-'.'}
-exec "$1"/"$INLINE_BUILDPACK_PATH"/bin/compile "$@"
+exec "$1"/"${INLINE_BUILDPACK_PATH:-bin}"/compile "$@"
