@@ -1,3 +1,4 @@
 #!/bin/sh
 # Usage: bin/detect <build-dir>
-exec "$1"/bin/detect "$@"
+INLINE_BUILDPACK_PATH=${INLINE_BUILDPACK_PATH:-'.'}
+exec "$1"/"$INLINE_BUILDPACK_PATH"/bin/detect "$@"
