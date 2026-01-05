@@ -1,6 +1,6 @@
 #!/bin/sh
 # Usage: bin/release <build-dir>
-
+INLINE_BUILDPACK_PATH=buildpack/bin
 RELEASE_SCRIPT="${1}/${INLINE_BUILDPACK_PATH:-bin}/release"
 
 # The Buildpack API states that the `bin/release` script is optional.
