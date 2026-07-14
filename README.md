@@ -18,7 +18,6 @@ Phil Hagelberg originated this lovely idea.
     $ find . -type f -print
     ./bin/compile
     ./bin/detect
-    ./bin/release
     ./bin/run
     ./Procfile
 
@@ -34,4 +33,4 @@ Phil Hagelberg originated this lovely idea.
     $ git push heroku master
     ...
 
-[buildpack]: http://devcenter.heroku.com/articles/buildpack
+[buildpack]: https://devcenter.heroku.com/articles/buildpacks
